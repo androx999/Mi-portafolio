@@ -329,47 +329,47 @@ section {
 }
 
 .progress-line.html span {
-  width: 90%;
+  width: 50%;
   background-color: #e34c26;
 }
 
 .progress-line.css span {
-  width: 90%;
+  width: 35%;
   background-color: #2965f1;
 }
 
 .progress-line.javascript span {
-  width: 90%;
+  width: 50%;
   background-color: #f0db4f;
 }
 
 .progress-line.python span {
-  width: 90%;
+  width: 30%;
   background-color: #c32ec9;
 }
 
 .progress-line.java span {
-  width: 90%;
+  width: 40%;
   background-color: #5382a1;
 }
 
 .progress-line.angular span {
-  width: 90%;
+  width: 25%;
   background-color: #dd1b16;
 }
 
 .progress-line.ionic span {
-  width: 90%;
+  width: 10%;
   background-color: #387ef5;
 }
 
 .progress-line.asp span {
-  width: 90%;
+  width: 40%;
   background-color: #512bd4;
 }
 
 .progress-line.spring span {
-  width: 90%;
+  width: 20%;
   background-color: #6db33f;
 }
 .progress-line span::after {
@@ -385,31 +385,31 @@ section {
   opacity: 0;
 }
 .progress-line.html span::after {
-  content: "90%";
+  content: "50%";
 }
 .progress-line.css span::after {
-  content: "90%";
+  content: "35%";
 }
 .progress-line.javascript span::after {
-  content: "90%";
+  content: "50%";
 }
 .progress-line.python span::after {
-  content: "90%";
+  content: "30%";
 }
 .progress-line.java span::after {
-  content: "90%";
+  content: "40%";
 }
 .progress-line.angular span::after {
-  content: "90%";
+  content: "25%";
 }
 .progress-line.ionic span::after {
-  content: "90%";
+  content: "10%";
 }
 .progress-line.asp span::after {
-  content: "90%";
+  content: "40%";
 }
 .progress-line.spring span::after {
-  content: "90%";
+  content: "20%";
 }
 .progress-line span::before {
   content: "";
@@ -804,3 +804,51 @@ section {
   padding: 10px;
   border-radius: 0.5rem;
 }
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #f80000;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  position: absolute;
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #f80000;
+  color: black;
+}
+
