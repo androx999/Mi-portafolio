@@ -1,322 +1,451 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./stylesheet.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">Portafolio</a>
-
-        <nav class="navbar">
-            <a href="#home" style="--i:1;" class="active">Principal</a>
-            <a href="#about" style="--i:2;">Acerca</a>
-            <a href="#services" style="--i:3;">Servicios</a>
-            <a href="#Skills" style="--i:4;">Habilidades</a>
-            <a href="#contact" style="--i:5;">Contactame</a>
-        </nav>
-    </header>
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hola, Yo soy</h3>
-            <h1>Andres Briseño</h1>
-            <h3>Y soy <span class="text"></span></h3>
-            <p>Desarrollador de Software con algo de experiencia.
-                <br>Tengo experiencia en desarrollo y busco aprender con diferentes tecnologías</br>
-            </p>
-            <div class="home-sci">
-                <a href="https://www.facebook.com/andresalejandro.brisenocristerna/" style="--i:7;"><i
-                        class='bx bxl-facebook'></i></a>
-                <a href="https://www.instagram.com/androx_999?igsh=Zm1tZTJ0Nncwa3F2&utm_source=qr" style="--i:8;"><i
-                        class='bx bxl-instagram'></i></a>
-                <a href="https://github.com/androx999" style="--i:9;"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/andrés-alejandro-briseño-cristerna-a37a13235/" style="--i:10;"><i
-                        class='bx bxl-linkedin'></i></a>
-                <a href="https://wa.me/8121896718?text=Hola Andrés,
-
-                    Soy [nombre de la persona] de [nombre de la empresa], específicamente del departamento de [nombre del departamento]. He visto que estás interesado en el puesto de [nombre del puesto] y me gustaría hablar contigo al respecto."
-                    style="--i:11"><i class='bx bxl-whatsapp'></i></a>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="" style="color: aliceblue;">ANDRES</a><a href="#"> BC</a>
             </div>
-            <a href="./resources/BriseñoCristernaAndres_CV.pdf" class="btn-box">Descargar CV</a>
-        </div>
-    </section>
-
-
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="./resources/perfil.jpg" alt="">
-        </div>
-        <div class="about-text">
-            <h2>Mi<span> Historia</span></h2>
-            <h4>Desarrollo de Software!</h4>
-            <p>
-                Soy un profesional apasionado por las Ciencias Computacionales, con un año de experiencia en el
-                desarrollo de software. Mi formación académica y mi experiencia práctica me han proporcionado una base
-                sólida en diversas tecnologías y metodologías de desarrollo, que me permiten abordar con eficacia los
-                desafíos del mundo tecnológico.
-
-                Desde que comencé mi carrera, he trabajado en el diseño, desarrollo y mantenimiento de aplicaciones web,
-                demostrando mi capacidad para aprender rápidamente y adaptarme a nuevas tecnologías. Mi enfoque siempre
-                ha sido entregar soluciones de alta calidad que mejoren la experiencia del usuario y optimicen el
-                rendimiento del sistema.
-
-                Me considero una persona proactiva y orientada a resultados, con una fuerte ética de trabajo y una gran
-                capacidad para trabajar en equipo. Disfruto colaborando con otros profesionales y compartiendo
-                conocimientos para alcanzar objetivos comunes. Además, soy un firme creyente en la mejora continua, por
-                lo que constantemente busco nuevas oportunidades para expandir mis habilidades y conocimientos en el
-                campo de la tecnología.
-
-                En mi tiempo libre, me gusta explorar nuevas tecnologías y trabajar en proyectos personales que me
-                desafían a aprender y crecer. Estoy entusiasmado por la oportunidad de unirme a una empresa innovadora
-                donde pueda contribuir con mi experiencia y seguir desarrollándome profesionalmente.
-            </p>
-            <a href="#" class="btn-box">Mas Sobre Mi</a>
-        </div>
-    </section>
-    <section>
-        <div style="text-align: center;">
-        <div class="services" id="services">
-            <div class="container">
-                <h1 class="sub-title">Mis <span style="text-align: center;">Servicios</span></h1>
-                <div class="slideshow-container">
-                    <div class="services-list slideshow-container">
-                    
-                        <div class="mySlides">
-                            <i class='bx bx-code-block' style='color:#f80000'  ></i>
-                            <h2>FullStack Developer</h2>
-                            
-                            </i>
-                        </div>
-                        <div class="mySlides">
-                            <i class='bx bx-server' style='color:#f80000'></i>
-                            <h2>BackEnd Developer</h2>
-                            
-                            </i>
-                        </div>
-                        <div class="mySlides">
-                            <i class='bx bx-laptop' style='color:#f80000' ></i>
-                            <h2>FrontEnd Developer</h2>
-                           
-                            </i>
-                        </div>
-                        <a class="prev" onclick="plusSlides(-1)">❮</a>
-                        <a class="next" onclick="plusSlides(1)">❯</a>
-
-                    </div>
-                    
-                </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">MIS HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
             </div>
-        </div>
+        </header>
     </div>
-    </section>
 
-    <h1 class="sub-title">Mis <span>Habilidades</span></h1>
-    <section>
-        <div class="container1" id="Skills">
-            <h1 class="heading1">Habilidades Tecnicas</h1>
-            <div class="Technical-bars">
-                <!-- HTML -->
-                <div class="bar html-bar"><i class='bx bxl-html5' style='color:#e34c26'> HTML</i>
-                    <div class="info">
-                        
-                    </div>
-                    <div class="progress-line html">
-                        <span></span>
-                    </div>
-                </div>
-                <!-- CSS -->
-                <div class="bar css-bar"><i class='bx bxl-css3' style='color:#2965f1'> CSS</i>
-                    <div class="info">
-                       
-                    </div>
-                    <div class="progress-line css">
-                        <span></span>
-                    </div>
-                </div>
-                <!-- JavaScript -->
-                <div class="bar javascript-bar"><i class='bx bxl-javascript' style='color:#f0db4f'> JAVASCRIPT</i>
-                    <div class="info">
-                        
-                    </div>
-                    <div class="progress-line javascript">
-                        <span></span>
-                    </div>
-                </div>
-                <!-- Python -->
-                <div class="bar python-bar"><i class='bx bxl-python' style='color:#c32ec9'> PYTHON</i>
-                    <div class="info">
-                        
-                    </div>
-                    <div class="progress-line python">
-                        <span></span>
-                    </div>
-                </div>
-                <!-- Java -->
-                <div class="bar java-bar"><i class='bx bxl-java' style='color:#5382a1'> JAVA</i>
-                    <div class="info">
-                       
-                    </div>
-                    <div class="progress-line java">
-                        <span></span>
-                    </div>
-                </div>
-                <!-- Angular -->
-                <div class="bar angular-bar"><i class='bx bxl-angular' style='color:#d4173b'> ANGULAR</i>
-                    <div class="info">
-                       
-                    </div>
-                    <div class="progress-line angular">
-                        <span></span>
-                    </div>
-                </div>
-                <!-- Ionic -->
-                <div class="bar ionic-bar"><i class='bx bx-radio-circle-marked' style='color:#387ef5'> IONIC</i>
-                    <div class="info">
-                       
-                    </div>
-                    <div class="progress-line ionic">
-                        <span></span>
-                    </div>
-                </div>
-                <!-- ASP.Net -->
-                <div class="bar asp-bar"><i class='bx bxl-dev-to' style='color:#512bd4'> ASP.NET</i>
-                    <div class="info">
-                        
-                    </div>
-                    <div class="progress-line asp">
-                        <span></span>
-                    </div>
-                </div>
-                <!-- Spring Boot -->
-                <div class="bar spring-bar"><i class='bx bxl-spring-boot' style='color:#59a25d'> SPRING</i>
-                    <div class="info">
-                        
-                    </div>
-                    <div class="progress-line spring">
-                        <span></span>
-                    </div>
-                </div>
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="./img/Profile-portfolio.jpg" alt="">
             </div>
-        </div>
-
-        <div class="container1">
-            <h1 class="heading1">Habilidades Profesionales</h1>
-            <div class="radial-bars">
-
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="80" r="80" fill="white"></circle>
-                        <circle class="path path-1" cx="100" cy="80" r="80" fill="white"></circle>
-                    </svg>
-                    <div class="percentage">40%</div>
-                    <div class="text">Creatividad</div>
-                </div>
-
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="80" r="80" fill="white"></circle>
-                        <circle class="path path-1" cx="100" cy="80" r="80" fill="white"></circle>
-                    </svg>
-                    <div class="percentage">80%</div>
-                    <div class="text">Comunicación</div>
-                </div>
-
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="80" r="80" fill="white"></circle>
-                        <circle class="path path-1" cx="100" cy="80" r="80" fill="white"></circle>
-                    </svg>
-                    <div class="percentage">70%</div>
-                    <div class="text">Resolviendo Problemas</div>
-                </div>
-
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="80" r="80" fill="white"></circle>
-                        <circle class="path path-1" cx="100" cy="80" r="80" fill="white"></circle>
-                    </svg>
-                    <div class="percentage">90%</div>
-                    <div class="text">Trabajo en equipo</div>
-                </div>
+            <h1>ANDRES BRISEÑO</h1>
+            <h2>Y soy <span class="text"></span></h2>
+            <div class="redes">
+                <a href="https://github.com/androx999"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://wa.me/8121896718?text=Hola Andrés, soy [nombre de la persona] de [nombre de la empresa], específicamente del departamento de [nombre del departamento]. He visto que estás interesado en el puesto de [nombre del puesto] y me gustaría hablar contigo al respecto."
+                    style="--i:11"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/andr%C3%A9s-alejandro-brise%C3%B1o-cristerna-a37a13235/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTMXTkGjKhvVXFRGgVRlFCLQSwQthNqscLVkjDJLTJjvvdRkXwjrDJDKxSvJFqqFWcBpML"><i class="fa-regular fa-envelope"></i></a>
             </div>
         </div>
     </section>
-    <section>
-        <div id="portfolio" id="project">
-            <div class="main-text" id="project">
-                <h2>Proyectos<span> Recientes</span></h2>
 
-                <div class="portfolio-content">
-                    <class class="row">
-                        <img src="./resources/posterLeCoure.jpg" width: 350; height: 200;>
-                        <div class="layer">
-                            <h5>LeCoure</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quaerat fugiat
-                                perferendis blanditiis quidem quas consequatur enim quos dolores, recusandae dolore
-                                ullam inventore nulla repudiandae, eligendi placeat optio quibusdam corrupti.
-                            </p>
-                            <a href="https://gymsys.netlify.app"> <i class="bx bx-link-external"
-                                    style="color: aliceblue"></i></a>
-                            <a href="https://github.com/androx999/LeCoure"><i class='bx bxl-github'
-                                    style="color: aliceblue"></i></a>
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Andrés Briseño.</span> Soy un desarrollador de software egresado de Ciencias
+                Computacionales y residente en Nuevo León, con experiencia en diseño, desarrollo y mantenimiento de
+                aplicaciones web. Desde mis primeros proyectos, he demostrado una rápida adaptabilidad a nuevas
+                tecnologías y un enfoque en soluciones de alta calidad que optimizan el rendimiento y la experiencia del
+                usuario. Me considero proactivo y orientado a resultados, con una fuerte ética de trabajo y facilidad
+                para colaborar en equipos multidisciplinarios. Comprometido con la mejora continua, siempre busco nuevas
+                oportunidades para expandir mis habilidades en tecnología.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de Nacimiento</strong>
+                            23-06-2002
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            (+52) 8121896718
+                        </li>
+                        <li>
+                            <strong>Email Profesional</strong>
+                            andres.brisenocr@uanl.edu.mx
+                        </li>
+                        <li>
+                            <strong>Email Personal</strong>
+                            abrisenocristerna@gmail.com
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Programador/Analista</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
                         </div>
-                    </class>
-                    <class class="row">
-                        <img src="./resources/logogymsys.jpg" width: 350; height: 200;>
-                        <div class="layer">
-                            <h5>Gym-Sys</h5>
-                            <p>Gym Sys es un sistema de software estilo punto de venta dedicado a gimnasios y sus usuarios. Gracias a las diversas herramientas dentro del sistema es posible manejar la seguridad, accesibilidad y comodidad de todos tus procesos como centro deportivo.
-                            </p>
-                            <a href="https://gymsys.netlify.app"> <i class="bx bx-link-external"
-                                    style="color: aliceblue"></i></a>
-                            <a href="https://github.com/androx999/GymSys-Website "><i class='bx bxl-github'
-                                    style="color: aliceblue"></i></a>
+                        <div class="interes">
+                            <i class="fas fa-guitar"></i>
+                            <span>MUSICA</span>
                         </div>
-                    </class>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>PELICULAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>VIDEO<br>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>EJERCICIO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>PROGRAMACION</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span>AMISTADES</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <a href="./resources/BriseñoCristernaAndres_CV.pdf" download>
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>MIS HABILIDADES</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Angular</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ionic</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>.Net-Core</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades blandas</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Autodidacta</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <div class="contact-text">
-            <h2><span>¡Conéctate Conmigo!</span></h2>
-            <h4>Hagamos Grandes Proyectos Juntos</h4>
-            <p>Estoy aquí para colaborar contigo y llevar tus ideas al siguiente nivel. Ya sea que necesites soluciones innovadoras, automatizaciones eficientes o simplemente alguien que comprenda tus desafíos tecnológicos, estoy listo para ayudarte. Vamos a trabajar juntos y transformar tus proyectos en realidades exitosas.</p>
-            <div class="contact-list">
-                <li><i class='bx bx-send bx-fade-right' style='color:#f80000'></i>andres.brisenocr@uanl.edu.mx</li>
-                <li><i class='bx bxs-phone bx-tada' style='color:#f80000'></i></i>8121896718</li>
-            </div>
-            <div class="contact-icons">
-                <a href=""><i class='bx bxl-facebook-circle' style='color:#f80000'></i></a>
-                <a href=""><i class='bx bxl-instagram' style='color:#f80000'></i></a>
-                <a href=""><i class='bx bxl-linkedin-square' style='color:#f80000'></i></a>
-            </div>
-        </div>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Lic. en Ciencias Computacionales</h4>
+                        <span class="casa">Universidad Autónoma de Nuevo León</span>
+                        <span class="fecha">2019 - 2024</span>
+                        <p>Egresado en Ciencias Computacionales de la Facultad de Ciencias Físico Matemáticas por la
+                            Universidad Autónoma de Nuevo León.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Inglés</h4>
+                        <span class="casa">Universidad Autónoma de Nuevo León</span>
+                        <span class="fecha">2018 - 2023</span>
+                        <p>Curso de idioma inglés por parte del Centro de Idiomas de la Facultad de Filosofía y Letras
+                            de la Universidad Autónoma de Nuevo León</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
 
-        <div class="contact-form">
-            <form action="">
-                <input type="" placeholder="Nombre" required>
-                <input type="email" placeholder="Email" required>
+                </div>
 
-                <input type="" placeholder="Asunto" required>
-                <textarea name="" id="" cols="40" rows="10" placeholder="Mensaje" required></textarea>
-                <input type="submit" value="Enviar" class="send">
-            </form>
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Full Stack Developer</h4>
+                        <span class="casa">Centro para el Desarrollo de la Industria del Software (CDIS)</span>
+                        <span class="fecha">Mayo 2023 - Actualidad</span>
+                        <h5>Responsabilidades: </h5>
+                        <ul>
+                            <li>Desarrollo de servicios web RESTful con .NET Core para operaciones CRUD.</li>
+                            <li>Creación de interfaces de usuario interactivas utilizando Angular.</li>
+                            <li>Implementación de medidas de seguridad y optimización de performance.</li>
+                        </ul><br>
+
+                        <h5>Resultados:</h5>
+                        <ul>
+                            <li>Mejora significativa en la velocidad de carga de la aplicación.</li>
+                            <li>Desarrollo de un sistema de gestión robusto y escalable, mejorando la
+                                eficiencia en el manejo de datos.</li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>RPA Developer Trainee</h4>
+                        <span class="casa">Disitem de las Tecnologias de la Información</span>
+                        <span class="fecha">Febrero 2023 - Abril 2024</span>
+                        <h5>Responsabilidades: </h5>
+                        <ul>
+                            <li>Desarrollé y automatizé aplicaciones mediante bots personalizados para empresas como Panini y Bimbo, usando VBA, SQL y Python.</li>
+                        </ul>
+                        <h5>Resultados: </h5>
+                        <ul>
+                            <li>•	Optimicé procesos y reduje errores manuales al implementar soluciones escalables de automatización con Pandas y OpenXLSX.</li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <div class="last-text">
-        <p>Desarrollado por AndresBC 2023°</p>
-    </div>
-    <a href="" class="top"><i class='bx bx-up-arrow-alt' style='color:black'></i></a>
 
-    <script src="main.js"></script>
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="./resources/logogymsys.jpg" alt="">
+                    <div class="overlay">
+                        <h3>GymSys WebPage</h3>
+                        <br>
+                        <i class="fa-brands fa-github"><a href="https://github.com/androx999/GymSys-Website"></a></i><i class="fa-solid fa-globe"><a href="https://gymsys.netlify.app"></a></i>
+                        
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./resources/leCoure.jpg" alt="">
+                    <div class="overlay">
+                        <h3>LeCoure</h3>
+                        <br>
+                        <i class="fa-brands fa-github"><a href="https://github.com/androx999/LeCoure"></a></i><i class="fa-solid fa-globe"><a href="https://github.com/androx999/LeCoure"></a></i>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Apodaca, Nuevo León
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                 8121896718
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: abrisenocristerna@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/androx999"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/8121896718?text=Hola Andrés, soy [nombre de la persona] de [nombre de la empresa], específicamente del departamento de [nombre del departamento]. He visto que estás interesado en el puesto de [nombre del puesto] y me gustaría hablar contigo al respecto."
+                style="--i:11"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/andr%C3%A9s-alejandro-brise%C3%B1o-cristerna-a37a13235/"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTMXTkGjKhvVXFRGgVRlFCLQSwQthNqscLVkjDJLTJjvvdRkXwjrDJDKxSvJFqqFWcBpML"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
