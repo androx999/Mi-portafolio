@@ -180,12 +180,16 @@ body {
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 4rem;
+  
 }
 .sub-title {
   text-align: center;
   font-size: 60px;
-  padding-bottom: 70px;
 }
+ #services{
+  text-align: center;
+}
+
 .sub-title span {
   color: #f80000;
 }
@@ -808,7 +812,7 @@ section {
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  background: #f1f1f1f1;
+  background: #0000;
 }
 
 /* Slides */

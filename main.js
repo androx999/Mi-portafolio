@@ -16,11 +16,15 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
+  clearInterval(autoSlide); // Detiene el autoplay cuando el usuario navega manualmente
   showSlides(slideIndex += n);
+  autoSlide = setInterval(() => plusSlides(1), 5000); // Reinicia el autoplay
 }
 
 function currentSlide(n) {
+  clearInterval(autoSlide);
   showSlides(slideIndex = n);
+  autoSlide = setInterval(() => plusSlides(1), 5000);
 }
 
 function showSlides(n) {
@@ -38,3 +42,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+// Auto slide cada 5 segundos
+var autoSlide = setInterval(() => plusSlides(1), 5000);
