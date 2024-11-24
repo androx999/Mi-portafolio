@@ -57,3 +57,44 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 } 
+
+
+const slides = document.querySelector('.slides');
+const slideElements = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+let currentIndex = 0;
+
+function showSlide(index) {
+    // Ajusta el índice si está fuera de rango
+    if (index >= slideElements.length) currentIndex = 0;
+    if (index < 0) currentIndex = slideElements.length - 1;
+
+    // Mueve el slider
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+    // Actualiza los indicadores
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[currentIndex].classList.add('active');
+}
+
+// Navegación por flechas
+document.querySelector('.prev').addEventListener('click', () => {
+    currentIndex--;
+    showSlide(currentIndex);
+});
+
+document.querySelector('.next').addEventListener('click', () => {
+    currentIndex++;
+    showSlide(currentIndex);
+});
+
+// Navegación por indicadores
+dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+        currentIndex = parseInt(dot.dataset.index);
+        showSlide(currentIndex);
+    });
+});
+
+// Inicializa el slider
+showSlide(currentIndex);
